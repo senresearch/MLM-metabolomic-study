@@ -1,7 +1,7 @@
 # Matrix Linear Models: an application to a metabolomic study
 
 
-Gregory Farage<sup>1</sup>, Timothy J. Garrett<sup>2</sup>, Michelle A. Puchowicz<sup>3</sup>, Qingming Dong<sup>4</sup>, Christopher J. Cieker<sup>4</sup>, Dale Childress<sup>5</sup>, Edwards A. Park<sup>4</sup>, Claire L. Simpson<sup>6</sup>, Rajendra Raghow<sup>4</sup>, Marshall B. Elam<sup>4, 5</sup>, Saunak Sen<sup>1</sup>
+Gregory Farage<sup>1</sup>, Timothy J. Garrett<sup>2</sup>, Michelle A. Puchowicz<sup>3</sup>, Qingming Dong<sup>4</sup>, Christopher J. Cieker<sup>4</sup>, Dale Childress<sup>5</sup>, Edwards A. Park<sup>4</sup>, Claire L. Simpson<sup>6</sup>, Rajendra Raghow<sup>4</sup>, Marshall B. Elam<sup>4, 5</sup>, Śaunak Sen<sup>1</sup>
 
 ><sup>1</sup>Department of Preventive Medicine, College of Medicine, University of Tennessee Health Science Center, Memphis, TN   
 <sup>2</sup>Department of Pathology, Immunology and Laboratory Medicine, University of Florida Health, Gainesville, FL    
