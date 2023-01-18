@@ -16,7 +16,8 @@ Extracting information from high-throughput omics data remains a significant cha
 
 ### Materials
 
-- [Pluto notebook Analysis](https://htmlview.glitch.me/?https://github.com/senresearch/MLM-metabolomic-study/blob/main/PlutoReportMLMtriglycerideGwithFishOil.jl.html)
+- [Pluto notebook COPD Analysis](https://htmlview.glitch.me/?https://github.com/senresearch/MLM-metabolomic-study/blob/postdoc_showcase_2022/copd_postdoc_showcase.jl.html)
+- [Pluto notebook Pansteatitis Analysis](https://htmlview.glitch.me/?https://github.com/senresearch/MLM-metabolomic-study/blob/postdoc_showcase_2022/pansteatitis_postdoc_showcase.jl.html)
 
 ### References:
 
