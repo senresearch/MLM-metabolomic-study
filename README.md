@@ -16,6 +16,10 @@ Extracting information from high-throughput omics data remains a significant cha
 
 ### Materials
 
+#### Interactive
+- [Live Pluto notebook Pansteatitis Analysis](https://notebooks.one/pansteatitis_postdoc_showcase.html)
+
+#### Static
 - [Pluto notebook COPD Analysis](https://htmlview.glitch.me/?https://github.com/senresearch/MLM-metabolomic-study/blob/postdoc_showcase_2022/copd_postdoc_showcase.jl.html)
 - [Pluto notebook Pansteatitis Analysis](https://htmlview.glitch.me/?https://github.com/senresearch/MLM-metabolomic-study/blob/postdoc_showcase_2022/pansteatitis_postdoc_showcase.jl.html)
 
