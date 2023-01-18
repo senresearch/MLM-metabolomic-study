@@ -1,17 +1,18 @@
-# Matrix Linear Models: an application to a metabolomic study
+# Matrix Linear Models for connecting metabolite composition to individual characteristics
 
+Gregory Farage<sup>1</sup>, Chenhao Zhao<sup>2</sup>, Suneeta Godbolec<sup>3</sup>, Michelle Puchowicz<sup>4</sup>, Marshall B.
+Elame<sup>5, 6</sup>, Rajendra Raghow<sup>6</sup>, Timothy J. Garrett<sup>7</sup>, Katerina Kechrisc<sup>3</sup>,  Śaunak Sen<sup>1</sup>
 
-Gregory Farage<sup>1</sup>, Timothy J. Garrett<sup>2</sup>, Michelle A. Puchowicz<sup>3</sup>, Qingming Dong<sup>4</sup>, Christopher J. Cieker<sup>4</sup>, Dale Childress<sup>5</sup>, Edwards A. Park<sup>4</sup>, Claire L. Simpson<sup>6</sup>, Rajendra Raghow<sup>4</sup>, Marshall B. Elam<sup>4, 5</sup>, Śaunak Sen<sup>1</sup>
-
-><sup>1</sup>Department of Preventive Medicine, College of Medicine, University of Tennessee Health Science Center, Memphis, TN   
-<sup>2</sup>Department of Pathology, Immunology and Laboratory Medicine, University of Florida Health, Gainesville, FL    
-<sup>3</sup>Department of Pediatrics, College of Medicine, University of Tennessee Health Science Center, Memphis, TN   
-<sup>4</sup>Department of Pharmacology, College of Medicine, University of Tennessee Health Science Center, Memphis, TN   
-<sup>5</sup>Department of Medicine, College of Medicine, University of Tennessee Health Science Center, Memphis, TN   
-<sup>6</sup>Department of Genetics, Genomics & Informatics, College of Medicine, University of Tennessee Health Science Center, Memphis, TN   
+><sup>1</sup>Department of Preventive Medicine, University of Tennessee Health Science Center, Memphis, TN 38163   
+<sup>2</sup>Geisel School of Medicine, Dartmouth College, Hanover, NH 03755  
+<sup>3</sup>Department of Biostatistics & Informatics, Colorado School of Public Health, University of Colorado Anschutz Medical Campus, Aurora, CO 80045   
+<sup>4</sup>Department of Pediatrics, University of Tennessee Health Science Center, Memphis, TN 38163   
+<sup>5</sup>Department of Pharmacology, University of Tennessee Health Science Center, Memphis, TN 38163   
+<sup>6</sup>Department of Medicine, University of Tennessee Health Science Center, Memphis, TN 38163   
+<sup>7</sup>Department of Pathology, Immunology and Laboratory Medicine, University of Florida Health,Gainesville, FL 32610  
 
 ### Abstract     
-High-throughput omics data provide a detailed molecular window into biological processes, but extracting information remains a significant challenge. Integrating multimodal data sources improves interpretation compared to analyzing just one source. We used metabolite attributes to shed light on how the metabolome differs in patients with and without statin-associated muscle symptoms (SAMS). A confounding factor in these associations was fish oil supplementation which we adjusted for in our analysis. The Matrix Linear Models (MLMs) framework, which belongs to the bilinear models family, was used to study associations in structured high-throughput data. This framework allows estimating relationships in metabolites sharing established characteristics, whether categorical (e.g., type of metabolites or lipids) or numerical (e.g., number of double bonds in triglycerides). Standard analyses using high-throughput data usually ignore externally-available information about measurement attributes. The MLM method lays out a flexible structure to find the connections between sample characteristics and attributes of measures. This framework can be applied to various studies where attributes of measures are known, such as drug screening of cancer cell lines or eQTL experiments.
+Extracting information from high-throughput omics data remains a significant challenge. MatrixLinear Models (MLM) is a family of bilinear models we developed to investigate associations in high-throughput data. This approach allows for the aggregation of signals across samples and features within a single model, which differs from typical statistical metabolomics analysis, where each metabolite is first analyzed separately for correlations with sample characteristics. Then, another investigation is necessary to identify patterns among similar features. MLM algorithm unifies these two steps and provides measures of statistical significance. We illustrate MLM's flexibility, speed, and effectiveness by applying it to two metabolomic studies. We demonstrate how the MLM framework can also estimate relationships between metabolites based on their common characteristics, such as type or pathway, or numerical properties, like the number of double bonds in triglycerides. We show how our method further enables us to differentiate between two related attributes of triglycerides: the number of carbon atoms and the number of double bonds, which would be lost when lipids are analyzed separately. We have implemented our method in an open-source Julia package called MatrixLM, and it can be further explored using interactive notebooks.
 
 ### Materials
 
@@ -21,12 +22,14 @@ High-throughput omics data provide a detailed molecular window into biological p
 
 - Liang, J. W., Nichols, R. J., & Sen, Ś. (2019). Matrix linear models for high-throughput chemical genetic screens. Genetics, 212(4), 1063–1073. doi: [10.1534/genetics.119.302299.](https://academic.oup.com/genetics/article/212/4/1063/5931246)
 - Liang, J. W. & Sen, Ś. (2021). Sparse matrix linear models for structured high-throughput data. To appear in The Annals of Applied Statistics. [arXiv preprint: arXiv:1712.05767 [stat.CO].](https://arxiv.org/abs/1712.05767)
-
+- Gillenwater, Lucas A., Katerina J. Kechris, Katherine A. Pratte, Nichole Reisdorph, Irina Petrache, Wassim W. Labaki, Wanda O’Neal, Jerry A. Krishnan, Victor E. Ortega, Dawn L. DeMeo, and Russell P. Bowler. 2021. "Metabolomic Profiling Reveals Sex Specific Associations with Chronic Obstructive Pulmonary Disease and Emphysema" Metabolites 11, no. 3: 161. [https://doi.org/10.3390/metabo11030161](https://doi.org/10.3390/metabo11030161)
+- Koelmel, J. P. (2018). Lipidomics for wildlife disease etiology and biomarker discovery: a case study of pansteatitis outbreak in South Africa (part-I), NIH Common Fund's National Metabolomics Data Repository (NMDR) website, the Metabolomics Workbench, https://www.metabolomicsworkbench.org, Summary of Study ST001052, doi: 10.21228/M8JH5X
 
 ### Resources:
 
 - [MatrixLM.jl package](https://github.com/senresearch/MatrixLM.jl)
 - [MatrixLMnet.jl](https://github.com/senresearch/MatrixLMnet.jl)
+- [MetabolomicsWorkbenchAPI.jl](https://github.com/senresearch/MetabolomicsWorkbenchAPI.jl)
 - [Sen Research Group Resources](https://senresearch.github.io/)
 
 
